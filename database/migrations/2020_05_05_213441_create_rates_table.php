@@ -21,6 +21,7 @@ class CreateRatesTable extends Migration
             $table->integer('object_id');	//--could be a shop product, or real estate condo, etc..
             $table->integer('category_id');	
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
